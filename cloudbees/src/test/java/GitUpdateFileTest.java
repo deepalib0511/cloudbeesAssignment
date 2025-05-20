@@ -6,8 +6,6 @@ import org.testng.annotations.Test;
 import java.io.File;
 import java.util.Arrays;
 
-@Epic("Git CLI Automation")
-@Feature("Update File via CLI")
 public class GitUpdateFileTest {
 
     @Test(description = "Clone repo and update existing file")
