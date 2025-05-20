@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Git CLI Suite">
+    <test name="Git Operations">
+        <classes>
+            <class name="CloudBeesWebAppTest"/>
+            <class name="GitAddFileTest"/>
+            <class name="GitUpdateFileTest"/>
+        </classes>
+    </test>
+</suite>
