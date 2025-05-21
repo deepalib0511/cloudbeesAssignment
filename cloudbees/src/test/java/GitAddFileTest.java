@@ -14,7 +14,7 @@ public class GitAddFileTest {
     @Test(description = "Clone repo and add new file")
     public void testAddNewFile() throws Exception {
         String repoUrl = "https://github.com/deepalib0511/cloudbeesAssignment.git";
-        String token = "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"; // use env var in production
+        String token = System.getenv("GITHUB_TOKEN");
         String username = "deepalib0511";
         String cloneUrl = repoUrl.replace("https://", "https://" + username + ":" + token + "@");
         String localDir = "RepoClonedFromGitHub";

@@ -11,7 +11,7 @@ public class GitUpdateFileTest {
     @Test(description = "Clone repo and update existing file")
     public void testUpdateFile() throws Exception {
         String repoUrl = "https://github.com/deepalib0511/cloudbeesAssignment.git";
-        String token = "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";
+        String token = System.getenv("GITHUB_TOKEN");
         String username = "deepalib0511";
         String cloneUrl = repoUrl.replace("https://", "https://" + username + ":" + token + "@");
         String localDir = "RepoClonedFromGitHub";
